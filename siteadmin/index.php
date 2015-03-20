@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Site PPE</a>
+                <a class="navbar-brand" href="index.php">Site PPE GROUPE DE FOUS</a>
                 <! texte au dessus à gauche-->
             </div>
             <!-- Top Menu Items -->
