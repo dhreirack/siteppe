@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="Andrew">
 
-    <title>Site PPe</title>
+    <title>Site PPE</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
@@ -161,7 +161,7 @@
                         <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Articles</a>
                     </li>
                     <li>
-                        <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Compte utilisateur</a>
+                        <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Comptes utilisateurs</a>
                     </li>
       </div>
             <!-- /.navbar-collapse -->

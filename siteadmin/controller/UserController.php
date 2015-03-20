@@ -26,6 +26,10 @@ if(isset($_GET["action"]))
                         $lesUsers=$connection->getAll();
                         include("page/users/index.php");
                         break;	
+                case 'delete':
+
+                        $lesUsers=$connection->delete($_GET["id"]);
+                        break;
                 case 'connection':
                         $unUser=new User();
                         $unUser->login=$_POST["login"];
