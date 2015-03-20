@@ -12,7 +12,7 @@
 
     <title>Site PPe</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS test -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
