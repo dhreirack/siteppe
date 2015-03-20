@@ -155,7 +155,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.php?controller=news"><i class="fa fa-fw fa-dashboard"></i> News</a>
+                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="index.php?controller=news"><i class="fa fa-fw fa-bar-chart-o"></i> News</a>
                     </li>
                     <li>
                         <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Articles</a>
@@ -163,6 +166,7 @@
                     <li>
                         <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Comptes utilisateurs</a>
                     </li>
+
       </div>
             <!-- /.navbar-collapse -->
         </nav>
