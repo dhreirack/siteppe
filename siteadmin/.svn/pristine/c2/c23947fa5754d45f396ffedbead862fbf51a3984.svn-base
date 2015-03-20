@@ -1,0 +1,19 @@
+<?php
+class News
+{
+	public $id;
+	public $titre;
+	public $description;
+	public $date;
+	
+	public function __construct(){
+		
+		$this->date=new DateTime ('NOW');
+		
+	}
+	
+	public function afficher()
+	{
+		return $this->id. "!  ".$this->titre. "! Fait le".$this->date->format('Y-m-d');
+	}
+}

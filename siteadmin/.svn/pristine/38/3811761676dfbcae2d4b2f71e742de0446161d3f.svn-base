@@ -1,0 +1,15 @@
+<?php
+class News
+{
+	public $id;
+	public $titre;
+	public $description;
+	public $date;
+	
+	public function __construct(){
+		
+		$this->date=new DateTime ('NOW');
+		
+	}
+
+}
