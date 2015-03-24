@@ -2,3 +2,7 @@ Actualiser une base de donnée existante ("site admin") :
 
 Choisissez la base et faire importer - choisir la table (user.sql par exemple) et importer directement
 
+Ajout de toute les tables en un coup : 
+
+Créer la base de donnée "site admin", puis importer la fichier site_admin.sql dans celle-ci.
+
