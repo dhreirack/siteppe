@@ -1,0 +1,7 @@
+Actualiser une base de donnée existante ("site admin") :
+
+Choisissez la base et faire importer - choisir la table et importer directement
+
+Rajout de la base de donnée "site admin" : 
+
+Choisissez le bouton nouvel base de données puis faire importer - choisir le fichier site_admin.sql et importer (il va tout mettre directement).
