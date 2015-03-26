@@ -19,26 +19,41 @@ if(isset($_GET["action"]))
                 case 'store':
                         $unUser=new User();
                         $unUser->login=$_POST["login"];
-                        $unUser->pwd=$_POST["pwd"];
+                        $unUser->pwd=md5($_POST["pwd"]);
                         $connection->create($unUser);
-                        break;
-                case 'index':
-                        $lesUsers=$connection->getAll();
-                        include("page/users/index.php");
                         break;	
                 case 'delete':
 
                         $lesUsers=$connection->delete($_GET["id"]);
                         break;
                 case 'connection':
+                include("page/user/connection.php");
+                break;
+
+                case 'checkconnection':
                         $unUser=new User();
                         $unUser->login=$_POST["login"];
-                        $unUser->pwd=$_POST["pwd"];
+                        $unUser->password=md5($_POST["pwd"]);
                         $pdo=new UserPdo ();
                         $connection=$pdo->rechercherutilisateur($unUser);
+                        if($connection==1)
+                        {
+                                $_SESSION["user"]=$unUser;
+                            header('Location: index.php');  
+                        }
+                        else
+                        {
+                            header('Location: index.php?controller=user&action=connection');  
+                        }
+                        break;
+
+                case 'deconnection':
+                        session_destroy();
+                        header('page/users/connection.php');  
+                        break;
 
                 default:
-                        include("page/users/index.php");
+                        include("page/users/connection.php");
                         break;
         }
 

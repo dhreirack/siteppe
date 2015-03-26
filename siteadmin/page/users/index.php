@@ -22,7 +22,7 @@
                    echo "<tr><td>".$unUser->statut."</td><td>".$unUser->login."</td><td>".$unUser->dteinscription."</td><td><a href=\"index.php?controller=user&action=delete&id=".$unUser->iduser."\">Supprimer</a>
 </td><td>".$unUser->admin."</td></tr>";
                 }
-
+            
                 ?>
             </tbody>
         </table>

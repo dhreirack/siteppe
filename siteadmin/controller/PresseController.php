@@ -37,7 +37,7 @@ if(isset($_GET["action"]))
                         include("page/presse/modify.php");
                         break;			
                 default:
-                        include("page/presse/index.php");
+                        include("page/acceuil.php");
                         break;
         }
 
