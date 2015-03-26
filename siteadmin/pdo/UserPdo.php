@@ -59,19 +59,6 @@ class UserPdo extends MyPdo
 					$requete->bindValue(':pwd', $unUser->pwd, PDO::PARAM_STR);
 		 	 		$requete->execute();
 	}
-	public function checkconnection($unUser){
- 		try
-		{
-			$requete =$this->connection->prepare('SELECT count(*) as nb FROM user WHERE login=:login AND pwd=:pwd');
-			$requete->bindValue(':login', $unUser->login, PDO::PARAM_STR);
-			$requete->bindValue(':pwd', $unUser->pwd, PDO::PARAM_STR);
-			$requete->execute();
-			$ligne = $requete->fetch();
-			return $ligne["nb"];
-		}
-		catch (PDOException $e) {
-		    echo 'Échec requete : ' . $e->getMessage();
-		}
 
-	}
+
 } 

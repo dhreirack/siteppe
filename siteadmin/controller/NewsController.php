@@ -22,6 +22,10 @@ if(isset($_GET["action"]))
                         $uneNews->description=$_POST["description"];
                         $connection->create($uneNews);
                         break;
+                case 'index':
+                        $lesNews=$connection->getAll();
+                        include("page/news/index.php");
+                        break;
                 case 'delete':
 
                         $lewNews=$connection->delete($_GET["id"]);
@@ -29,16 +33,9 @@ if(isset($_GET["action"]))
                 case 'modify':
                         $lewNews=$connection->id=["id"];
                         include("page/news/modify.php");
-                        break;
-                case 'login':
-                        $unUser=new User();
-                        $unUser->login="";
-                        $unUser->password="";
-                        $_SESSION["user"]=$unUser;
-                         header('Location: index.php');  
-                        break;  			
+                        break;			
                 default:
-                        include("page/acceuil.php");
+                        include("page/news/index.php");
                         break;
         }
 
