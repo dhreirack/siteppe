@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Andrew">
+    <meta name="author" content="Groupe Bonvalot">
 
-    <title>Site PPE</title>
+    <title>Site SI6</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Site PPE GROUPE DE FOUS</a>
+                <a class="navbar-brand" href="index.php">Site PPE</a>
                 <! texte au dessus à gauche-->
             </div>
             <!-- Top Menu Items -->
@@ -143,7 +143,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> SIO1 <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Iseppi SIO1 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -234,6 +234,16 @@
     <script src="public/js/plugins/morris/raphael.min.js"></script>
     <script src="public/js/plugins/morris/morris.min.js"></script>
     <script src="public/js/plugins/morris/morris-data.js"></script>
+
+    <script src="public/js/jquery.js" type="text/javascript"></script>
+    <script src="public/js/jquery.validationEngine.js" type="text/javascript"></script>  
+    <script src="public/js/jquery.validationEngine-fr.js" type="text/javascript"></script>  
+
+    <script>
+    $(document).ready(function(){
+        $("#createuser").validationEngine('attach');
+       });
+    </script>
 
     <script type="text/javascript">
       CKEDITOR.replace( 'description' );
