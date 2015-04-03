@@ -50,5 +50,10 @@ class NewsPdo extends MyPdo
 		 	 		$requete =$this->connection->query('DELETE FROM news WHERE id = ' .$id);
 		 	 		$requete->execute();
 	}
+		public function modify($id){
+ 	 		
+		 	 		$requete =$this->connection->query('UPDATE user WHERE id = ' .$id);
+		 	 		$requete->execute();
+	}
 
 } 

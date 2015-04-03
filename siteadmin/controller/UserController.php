@@ -26,6 +26,11 @@ if(isset($_GET["action"]))
 
                         $lesUsers=$connection->delete($_GET["id"]);
                         break;
+                case 'modify':
+                    include("page/users/modifyco.php");
+                    break;
+
+
                 case 'connection':
                 include("page/user/connection.php");
                 break;

@@ -52,6 +52,11 @@ class UserPdo extends MyPdo
 		 	 		$requete =$this->connection->query('DELETE FROM user WHERE iduser = ' .$id);
 		 	 		$requete->execute();
 	}
+	public function modify($id){
+ 	 		
+		 	 		$requete =$this->connection->query('UPDATE user WHERE iduser = ' .$id);
+		 	 		$requete->execute();
+	}
 	public function rechercherutilisateur($unUser){
  	 		
 		 	 		$requete =$this->connection->query('SELECT login,pwd FROM user WHERE login = :login and pwd = :pwd');
