@@ -27,7 +27,7 @@ if(isset($_GET["action"]))
                         $lewNews=$connection->delete($_GET["id"]);
                         break;
                 case 'modify':
-                        $lewNews=$connection->id=["id"];
+                        $lewNews=$connection->modify($_GET["id"]);
                         include("page/news/modify.php");
                         break;
                 case 'login':
