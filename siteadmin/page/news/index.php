@@ -9,10 +9,11 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <td>titre</td>
-                    <td>description</td>
-                    <td>date</td>
-                    <td>modifications</td>
+                    <td>TITRE</td>
+                    <td>DESCRIPTION</td>
+                    <td>DATE</td>
+                    <td>SUPPRIMER</td>
+                    <td>MODIFIER</td>
                 </tr>
             </thead>
             <tbody>
