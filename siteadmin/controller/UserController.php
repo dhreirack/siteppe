@@ -9,14 +9,14 @@ $connection = new UserPdo();
 //Si la variable $_GET["action"] existe
 if(isset($_GET["action"]))
 {
-        //Récupartion de l'action passée dans l'url
+        //Récupération de l'action passée dans l'url
         $action=$_GET["action"];
 
         switch ($action) {
                 case 'create':
                         include("page/users/createuser.php");
                         break;
-                case 'store':
+                case 'store'://récup des infos du formulaire
                         $unUser=new User();
                         $unUser->login=$_POST["login"];
                         $unUser->pwd=md5($_POST["pwd"]);

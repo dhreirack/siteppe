@@ -9,14 +9,14 @@ $connection = new PressePdo();
 //Si la variable $_GET["action"] existe
 if(isset($_GET["action"]))
 {
-        //Récupartion de l'action passée dans l'url
+        //Récupération de l'action passée dans l'url
         $action=$_GET["action"];
 
         switch ($action) {
                 case 'create':
                         include("page/presse/create.php");
                         break;
-                case 'store':
+                case 'store'://récup des infos du formulaire
                         $unArticle=new Presse();
                         $unArticle->nomarticle=$_POST["nomarticle"];
                         $unArticle->descriptionarticle=$_POST["descriptionarticle"];

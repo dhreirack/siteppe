@@ -9,14 +9,14 @@ $connection = new NewsPdo();
 //Si la variable $_GET["action"] existe
 if(isset($_GET["action"]))
 {
-        //Récupartion de l'action passée dans l'url
+        //Récupération de l'action passée dans l'url
         $action=$_GET["action"];
 
         switch ($action) {
                 case 'create':
                         include("page/news/create.php");
                         break;
-                case 'store':
+                case 'store'://récup des infos du formulaire
                         $uneNews=new News();
                         $uneNews->titre=$_POST["titre"];
                         $uneNews->description=$_POST["description"];
