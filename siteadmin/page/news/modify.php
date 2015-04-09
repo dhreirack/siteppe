@@ -1,0 +1,1 @@
+Ajout du test pour le tutoriel
