@@ -6,7 +6,7 @@ require_once "class/News.php";
 
 $connection = new NewsPdo();
 
-echo 'l accueil';
+echo 'Accueil';
 ?>
 
 <div class="row">
