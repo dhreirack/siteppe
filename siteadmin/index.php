@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="Groupe Bonvalot">
 
-    <title>Site SI6</title>
+    <title>Site PPE</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
