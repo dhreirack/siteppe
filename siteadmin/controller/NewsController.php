@@ -27,9 +27,10 @@ if(isset($_GET["action"]))
                         $lewNews=$connection->delete($_GET["id"]);
                         break;
                 case 'modify':
-                        $lewNews=$connection->modify($_GET["id"]);
-                        include("page/news/modify.php");
-                        break;
+                        $lewNews= new NewsPdo();
+                                $lewnews=$lewNews->edit($_GET["id"]);
+                                include("page/news/modify.php");
+                                break;
                 case 'login':
                         $unUser=new User();
                         $unUser->login="";

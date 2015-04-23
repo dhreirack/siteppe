@@ -52,8 +52,20 @@ class NewsPdo extends MyPdo
 	}
 		public function modify($id){
  	 		
-		 	 		$requete =$this->connection->query('UPDATE user WHERE id = ' .$id);
-		 	 		$requete->execute();
+		 	$reponse = $this->connection->query('SELECT * FROM news where id='.$id);
+			$donnees = $reponse->fetch();
+			// On affiche chaque entrée une à une
+			
+				$uneNews=new News();
+				$uneNews->id=$donnees["id"];
+				$uneNews->titre=$donnees["titre"];
+				$uneNews->description=$donnees["description"];
+				$uneNews->chemin=$donnees["chemin"];
+				$uneNews->date=$donnees["dte"];
+			
+				$reponse->closeCursor();
+			
+				return $uneNews;
 	}
 
 } 
