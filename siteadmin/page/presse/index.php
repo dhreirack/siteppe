@@ -4,7 +4,7 @@
           //  Presse \\ <small> Gérer la presse</small>
         </h1>
 
-<a class="navbar-brand" href="index.php?controller=presse&action=create">Créer un article de presse
+<a class="navbar-brand" href="index.php?controller=presse&action=create">Créer un article de presse</a>
 
         <table class="table table-striped">
             <thead>
