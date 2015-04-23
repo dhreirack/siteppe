@@ -9,11 +9,11 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <td>statut</td>
-                    <td>login</td>
-                    <td>dteinscription</td>
-                    <td>iduser</td>
-                    <td>admin</td>
+                    <td><strong>Statut</strong></td>
+                    <td><strong>Login (Nom)</strong></td>
+                    <td><strong>Date d'Inscription</strong></td>
+                    <td><strong>Action</strong></td>
+                    <td><strong>Admin</strong></td>
                 </tr>
             </thead>
             <tbody>

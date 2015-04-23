@@ -4,15 +4,15 @@
           //  Presse \\ <small> Gérer la presse</small>
         </h1>
 
-<a class="navbar-brand" href="index.php?controller=presse&action=create">Créer un article de presse
+<a class="navbar-brand" href="index.php?controller=presse&action=create">Créer un article de presse</a>
 
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <td>titre</td>
-                    <td>description</td>
-                    <td>date</td>
-                    <td>modifications</td>
+                    <td><strong>Titre</strong></td>
+                    <td><strong>Description</strong></td>
+                    <td><strong>Date</strong></td>
+                    <td><strong>Modifications</strong></td>
                 </tr>
             </thead>
             <tbody>

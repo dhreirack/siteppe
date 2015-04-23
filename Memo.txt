@@ -1,0 +1,10 @@
+/!\ siteadmin & FrontOffice !=  BackOffice & FrontOffice ou SiteAdmin BackOffice [...]
+
+/!\ Ne pas oublier la confirmation avant suppresion définitive 
+
+/!\ Définir une taille maxi pour les médias 
+
+/!\ Changer le format des dates 
+
+--> Demander les propriétés juridique vis-à-vis des articles de presses et autres médias stockés 
++ Ajouter un attribut "Visible/Invisible" (Permet l'affichage récurrent d'une news ou autre sans la supprimer entre temps)

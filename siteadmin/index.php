@@ -58,7 +58,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.php">Site PPE</a>
-                <! texte au dessus à gauche-->
+                <!-- texte au dessus à gauche-->
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -169,6 +169,12 @@
                     </li>
                     <li>
                         <a href="index.php?controller=news"><i class="fa fa-fw fa-bar-chart-o"></i> News</a>
+                    </li>
+					<li>
+                        <a href="index.php?controller=histoire"><i class="fa fa-fw fa-bar-chart-o"></i> Histoire</a>
+                    </li>
+					<li>
+                        <a href="index.php?controller=but"><i class="fa fa-fw fa-bar-chart-o"></i> But</a>
                     </li>
                     <li>
                         <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Presses</a>
