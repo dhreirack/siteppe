@@ -37,6 +37,7 @@
 
         <?php
     require 'class/News.php'; 
+    require 'class/Histoire.php';  
     require 'class/Users.php';  
     require 'pdo/MyPdo.php'; 
     require 'pdo/NewsPdo.php'; 
@@ -206,6 +207,9 @@
                                     break;
                                 case "presse":
                                     include("controller/PresseController.php");
+                                    break;
+								case "histoire":
+                                    include("controller/HistoireController.php");
                                     break;
                                 case "user":
                                     include("controller/UserController.php");
