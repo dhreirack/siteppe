@@ -19,9 +19,9 @@ echo 'Accueil';
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <td>titre</td>
-                    <td>description</td>
-                    <td>date</td>
+                    <td><strong>Titre</td>
+                    <td><strong>Description</td>
+                    <td><strong>Date</td>
                 </tr>
             </thead>
             <tbody>
