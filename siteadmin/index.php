@@ -177,7 +177,7 @@
                         <a href="index.php?controller=but"><i class="fa fa-fw fa-bar-chart-o"></i> But</a>
                     </li>
                     <li>
-                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Presses</a>
+                        <a href="index.php?controller=presse"><i class="fa fa-fw fa-bar-chart-o"></i> Presse</a>
                     </li>
                     <li>
                         <a href="index.php?controller=user"><i class="fa fa-fw fa-bar-chart-o"></i> Comptes utilisateurs</a>
