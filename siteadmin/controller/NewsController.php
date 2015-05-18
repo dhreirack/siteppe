@@ -24,12 +24,12 @@ if(isset($_GET["action"]))
                         break;
                 case 'delete':
 
-                        $lewNews=$connection->delete($_GET["id"]);
+                        $lesNews=$connection->delete($_GET["id"]);
                         break;
                 case 'modify':
-                        $lewNews= new NewsPdo();
-                                $lewnews=$lewNews->edit($_GET["id"]);
-                                include("page/news/modify.php");
+                        $modifyNews= new NewsPdo();
+                                $lanews=$modifyNews->modify($_GET['id']);
+                        include("page/news/modify.php");
                                 break;
                 case 'login':
                         $unUser=new User();
