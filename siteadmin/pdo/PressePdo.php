@@ -51,6 +51,7 @@ class PressePdo extends MyPdo
  	 		
 		 	 		$requete =$this->connection->query('DELETE FROM presse WHERE idarticle = ' .$id);
 		 	 		$requete->execute();
+					echo "L'Article à bien été intégralement supprimée (irréversible)";
 	}
 
 } 

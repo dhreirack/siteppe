@@ -47,8 +47,10 @@ class NewsPdo extends MyPdo
  	}
  	 	public function delete($id){
  	 		
-		 	 		$requete =$this->connection->query('DELETE FROM news WHERE id = ' .$id);
-		 	 		$requete->execute();
+						$requete =$this->connection->query('DELETE FROM news WHERE id = ' .$id);
+						$requete->execute();
+						echo "La News à bien été intégralement supprimée (irréversible)";
+
 	}
 		public function modify($id){
  	 		
