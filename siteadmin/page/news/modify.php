@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 Bienvenue sur modifier une nouvelle
-<form action="index.php?controller=news&action=modify=<?php echo $lanews->id ; ?>" enctype="multipart/form-data" method="post">
+<form action="index.php?controller=news&action=modify&id=<?php echo $lanews->id ; ?>" enctype="multipart/form-data" method="post">
 =======
 Modification de la nouvelle :
 <form action="index.php?action=update&id=<?php echo $lanews->id ; ?>" enctype="multipart/form-data" method="post">

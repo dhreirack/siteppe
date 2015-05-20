@@ -19,7 +19,7 @@
                 <?php
                 foreach ($lesNews as $uneNews) {
                    echo "<tr><td>".$uneNews->titre."</td><td>".$uneNews->description."</td><td>".$uneNews->dte."</td><td><a href=\"index.php?controller=news&action=delete&id=".$uneNews->id."\">Supprimer</a>
-                   <td><a href=\"index.php?controller=news&action=modify=".$uneNews->id."\">Modifier</a>
+                   <td><a href=\"index.php?controller=news&action=modify&id=".$uneNews->id."\">Modifier</a>
 </td></tr>";
                 }
 
