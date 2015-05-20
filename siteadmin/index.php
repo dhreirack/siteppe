@@ -260,11 +260,17 @@
   
        
     </script>
+    
     <script type="text/javascript">
       CKEDITOR.replace( 'corpsarticle' );
+      </script>
+
+      <script type="text/javascript">
+      CKEDITOR.replace( 'descriptionmodif' );
+      </script>
   
        
-    </script>
+
 </body>
 
 </html>
