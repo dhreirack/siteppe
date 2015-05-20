@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-Bienvenue sur modifier une nouvelle
+
+Modification de nouvelle :
 <form action="index.php?controller=news&action=modify&id=<?php echo $lanews->id ; ?>" enctype="multipart/form-data" method="post">
-=======
-Modification de la nouvelle :
-<form action="index.php?action=update&id=<?php echo $lanews->id ; ?>" enctype="multipart/form-data" method="post">
->>>>>>> origin/master
+
 	Titre : <input type="text" name="titre" value="<?php echo $lanews->titre ; ?>">
 	Description :
 	<textarea rows="10" cols="50" id="descriptionmodif" name="description" ><?php echo htmlentities($lanews->description); ?></textarea>
