@@ -13,7 +13,7 @@ class News
 	}
 	public function afficher()
 	{
-		return $this->id . "!" . $this->titre . "! Le" . $this->dte->format('Y-m-d');
+		return $this->id . "!" . $this->titre . "! Le" . $this->dte->format('d-m-Y');
 	}
 		public function dteFr()
 	{

@@ -29,8 +29,17 @@ if(isset($_GET["action"]))
                 case 'modify':
                         $modifyNews= new NewsPdo();
                                 $lanews=$modifyNews->modify($_GET['id']);
+                         
                         include("page/news/modify.php");
-                                break;
+                 break;
+                 case 'update':
+                        $uneNews=new News();
+                        $uneNews->id=$_GET["id"];
+                        $uneNews->titre=$_POST["titre"];
+                        $uneNews->description=$_POST["description"];
+                        $connection=new NewsPdo();
+                        $lesNews=$connection->update($uneNews);
+                break;
                 case 'login':
                         $unUser=new User();
                         $unUser->login="";

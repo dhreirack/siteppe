@@ -53,5 +53,22 @@ class PressePdo extends MyPdo
 		 	 		$requete->execute();
 					echo "L'Article à bien été intégralement supprimée (irréversible)";
 	}
+	}
+		public function modify($id){
+ 	 		
+		 	$reponse = $this->connection->query('SELECT * FROM presse where id='.$id);
+			$donnees = $reponse->fetch();
+			// On affiche chaque entrée une à une
+
+			$unArticle=new Presse();
+			$unArticle->idarticle=$donnees["idarticle"];
+			$unArticle->nomarticle=$donnees["nomarticle"];
+			$unArticle->descriptionarticle=$donnees["descriptionarticle"];
+		  	$unArticle->dtearticle=$donnees["dtearticle"];
+		  	$unArticle->corpsarticle=$donnees["corpsarticle"];
+		  	$resultat[]=$unArticle;
+		}
+		$reponse->closeCursor(); 
+		return $unArticle;
 
 } 

@@ -34,6 +34,11 @@
 </head>
 
 <body>
+      <?php
+        //session_start();
+        //if (isset($_SESSION['user']))
+        //{   echo "Vous êtes connecté en tant que :".$_SESSION['user'];
+            ?>
 
         <?php
     require 'class/News.php'; 
@@ -42,9 +47,8 @@
     require 'pdo/MyPdo.php'; 
     require 'pdo/NewsPdo.php'; 
     require 'pdo/UserPdo.php';  
-    session_start();
     ?>
-
+    
 
     <div id="wrapper">
 
@@ -143,6 +147,9 @@
                         </li>
                     </ul>
                 </li>
+
+
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>SIO1 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -163,6 +170,11 @@
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+
+
+
+     
+            <nav id="nav">
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
@@ -185,16 +197,27 @@
                     </li>
 
       </div>
+      </nav>
             <!-- /.navbar-collapse -->
         </nav>
-
-        <div id="page-wrapper">
+  
 
             <div class="container-fluid">
 
                 <!-- Page Heading -->
+                </div>
+         </nav>
+            <?php
+       // }
+       // else
+       /// {
+         //   echo '<a href="index.php?controller=user&action=connection">Se Connecter </a>';
+       //     echo '<a href="index.php?controller=user&action=create">Enregister </a>';
+       // }
+         ?>
                 
-                        <?php   
+        <div id="page-wrapper">
+              <?php   
                         
                         
                         if (isset($_GET["controller"]))
@@ -263,7 +286,7 @@
     <script type="text/javascript">
       CKEDITOR.replace( 'corpsarticle' );
   
-       
+      
     </script>
 </body>
 

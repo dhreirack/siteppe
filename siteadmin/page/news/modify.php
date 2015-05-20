@@ -1,5 +1,5 @@
 Bienvenue sur modifier une nouvelle
-<form action="index.php?action=update&id=<?php echo $lanews->id ; ?>" enctype="multipart/form-data" method="post">
+<form action="index.php?controller=news&action=modify=<?php echo $lanews->id ; ?>" enctype="multipart/form-data" method="post">
 	Titre : <input type="text" name="titre" value="<?php echo $lanews->titre ; ?>">
 	Description : <input type="text" name="description"  value="<?php echo $lanews->description ; ?>">
 	<!-- MAX_FILE_SIZE doit précéder le champ input de type file -->

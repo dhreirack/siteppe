@@ -34,7 +34,7 @@ class NewsPdo extends MyPdo
 			$requete =$this->connection->prepare('INSERT INTO news(titre, description, dte) VALUES(:titre,:description,:dte)');
 			$requete->bindValue(':titre', $uneNews->titre, PDO::PARAM_STR);
 			$requete->bindValue(':description', $uneNews->description, PDO::PARAM_STR);
-			$requete->bindValue(':dte', $uneNews->dte->format('Y-m-d'), PDO::PARAM_STR);
+			$requete->bindValue(':dte', $uneNews->dte->format('d-m-Y'), PDO::PARAM_STR);
 			$requete->execute();
 			/* ou mais moins pratique
 			$req= "INSERT INTO news(titre, description, dte) VALUES('".$uneNews->titre."','".$uneNews->description."','".$uneNews->dte->format('Y-m-d')."')";

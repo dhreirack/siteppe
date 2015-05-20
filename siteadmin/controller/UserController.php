@@ -32,7 +32,7 @@ if(isset($_GET["action"]))
 
 
                 case 'connection':
-                include("page/user/connection.php");
+                include("page/users/connection.php");
                 break;
 
                 case 'checkconnection':
