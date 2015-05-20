@@ -283,11 +283,22 @@
   
        
     </script>
+    
     <script type="text/javascript">
       CKEDITOR.replace( 'corpsarticle' );
+      </script>
+
+      <script type="text/javascript">
+      CKEDITOR.replace( 'descriptionmodif' );
+      </script>
   
+<<<<<<< HEAD
       
     </script>
+=======
+       
+
+>>>>>>> origin/master
 </body>
 
 </html>
