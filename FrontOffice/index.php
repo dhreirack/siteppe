@@ -66,7 +66,7 @@
 		<!-- Banner -->
 			<section id="banner">
 				<header>
-					<h2>Je vous souhiate le bienvenue <em>
+					<h2>Je vous souhaite le bienvenue <em>
 					
 				</header>
 			</section>
