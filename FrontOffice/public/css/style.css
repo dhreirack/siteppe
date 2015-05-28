@@ -32,10 +32,12 @@
 /* Basic */
 
 #logom{
-	max-width: 150%;
-	position:relative;
-	top:5%;
-	left:30%;
+		position: absolute; 
+		top: 10 px; 
+		left: 400px;
+		width: 10px;
+		 height: 1000px;
+		
 }
 
 	body,
