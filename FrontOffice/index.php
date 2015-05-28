@@ -24,7 +24,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="public/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
-
+		 
 		<!-- Header -->
 			<div id="header">
 				
@@ -37,21 +37,17 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">News</a></li>
+							<li class="current"><a href="index.php">News</a></li>
 							<li>
 								<a href="">Histoire</a>
 								<ul>
 									<li><a href="#">Lorem dolor</a></li>
-									<li><a href="#">Magna phasellus</a></li>
-									<li><a href="#">Etiam sed tempus</a></li>
+									
 									<li>
 										<a href="">Submenu</a>
 										<ul>
 											<li><a href="#">Lorem dolor</a></li>
-											<li><a href="#">Phasellus magna</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam nisl</a></li>
-											<li><a href="#">Veroeros feugiat</a></li>
+											
 										</ul>
 									</li>
 									<li><a href="#">Veroeros feugiat</a></li>
@@ -61,7 +57,7 @@
 							<li><a href="left-sidebar.html">Presse</a></li>
 							<li><a href="right-sidebar.html">Adhesion</a></li>
 							<li><a href="two-sidebar.html">Galerie</a></li>
-							<li><a href="contact.html">Contacter</a></li>
+							<li><a href="index.php?controller=contact">Contacter</a></li>
 						</ul>
 					</nav>
 
@@ -70,24 +66,37 @@
 		<!-- Banner -->
 			<section id="banner">
 				<header>
-					<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
-					<a href="#" class="button">BIENVENUE</a>
+					<h2>Je vous souhiate le bienvenue <em>
+					
 				</header>
 			</section>
-			eazrezerzaiurhazlkjrhzamehrza
-			azemrhjazmlrkejeaz
-			azmklerjazlkjrzae
-			mzekljrazaerljeazrezerzaiurhazlkjrhzamehrza
-			azemrhjazmlrkejeaz
-			azmklerjazlkjrzae
-			mzekljrazaerljeazrezerzaiurhazlkjrhzamehrza
-			azemrhjazmlrkejeaz
-			azmklerjazlkjrzae
-			mzekljrazaerljeazrezerzaiurhazlkjrhzamehrza
-			azemrhjazmlrkejeaz
-			azmklerjazlkjrzae
-			mzekljrazaerlj
+			
 
 		
 	</body>
+	<div id="footer">
+		
+		<?php
+    
+    
+    
+    session_start();
+    					  if (isset($_GET["controller"]))
+                          {
+                            $controller=$_GET["controller"];
+                         
+                            switch ($controller) {
+                                case "contact":
+                                    include("public/pages/contact.php");
+                                    break;
+                             
+                            }
+                          }
+                           else {
+                              include("../../index.php");
+                          }
+                          
+     ?>
+       </div>                   
+
 </html>
